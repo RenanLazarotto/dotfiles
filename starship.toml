@@ -1,0 +1,58 @@
+format = """
+$character\
+$directory\
+$fill\
+$cmd_duration\
+$git_branch\
+$nodejs\
+$golang\
+$line_break\
+[   ](fg:#a3a3a3)
+"""
+
+add_newline = true
+
+[directory]
+style = "fg:#2e6db4"
+format = "[$path]($style)"
+truncation_length = 6
+truncation_symbol = "…/"
+truncate_to_repo = false
+home_symbol = "󰜥 "
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+style = "fg:#ffbe0b"
+format = "[󰔛]($style) $duration "
+min_time = 0
+
+[git_branch]
+style = "fg:#7b2cbf"
+format = "[::](fg:#a3a3a3) [$symbol]($style) $branch "
+symbol = ""
+
+[nodejs]
+style = "fg:#80b918"
+symbol = "󰎙"
+format = "[::](fg:#a3a3a3) [$symbol]($style) $version "
+
+[golang]
+style = "fg:#5e60ce"
+symbol = ""
+format = "[::](fg:#a3a3a3) [$symbol]($style) $version "
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[](fg:#003791)[ ](bg:#003791)[](fg:#003791) "
+error_symbol = "[](fg:#df0024)[ ](bg:#df0024)[](fg:#df0024)"
