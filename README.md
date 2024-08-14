@@ -30,11 +30,8 @@ It **_should_** work, I don't know. Like I said, I created this on a hurry and m
 
 ---
 
-<div align="center">
-<b style="color:red; font-size:1.5rem">WARNING: THIS **WILL** OVERWRITE YOUR FILES!</b>
-</div>
-
----
+> [!CAUTION]
+> FILES IN THIS REPOSITORY **WILL** OVERWRITE YOUR FILES!
 
 Please please **_pleeeeeeeease_** use this carefully. These are meant to be the dotfiles I use on my machines, suitable for my needs. They're here because I got tired of using a secret gist to keep all my dotfiles and needed something that could set the most basic stuff quickly.
 
